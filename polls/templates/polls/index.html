@@ -1,3 +1,4 @@
+<h4> {{ request.path }}</h4>
 {% if latest_question_list %}
 <ul>
     {% for question in latest_question_list %}
@@ -5,5 +6,6 @@
     {% endfor %}
 </ul>
 {% else %}
-<P>No polls available.</P>
+<p>No polls available.</p>
 {% endif %}
+
